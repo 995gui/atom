@@ -1,0 +1,115 @@
+continuer = -1
+while continuer == -1:
+    print("What operation would you like to do ?")
+    print(" 1 - Addition ")
+    print(" 2 - Subtraction ")
+    print(" 3 - Multiplication ")
+    print(" 4 - Division ")
+    print(" 5 - Modulo ")
+    a = -1
+    while a == -1:
+        try:
+            a = int(input("Please enter the corresponding number to the operation that you would like done."))
+
+#ADDITION
+            if a == 1:
+                x = -1
+                y = -1
+                while x == -1:
+                    try:
+                        x = int(input("Please enter the first addition number:"))
+                    except:
+                        print("Please enter a number")
+                        x = -1
+                while y == -1:
+                    try:
+                        y = int(input("Please enter the second addition number:"))
+                    except:
+                        print("Please enter a number")
+                        y = -1
+                print(str(x) + " " + "+" + " " + str(y) + " " + "=" + " " +str(x + y))
+
+#SUBTRACTION                
+            elif a == 2:
+                x = -1
+                y = -1
+                while x == -1:
+                    try:
+                        x = int(input("Please enter the first subtraction number:"))
+                    except:
+                        print("Please enter a number")
+                        x = -1
+                while y == -1:
+                    try:
+                        y = int(input("Please enter the second subtraction number:"))
+                    except:
+                        print("Please enter a number")
+                        y = -1
+                print(str(x) + " " + "-" + " " + str(y) + " " + "=" + " " +str(x - y))
+
+#MULTIPLICATION                
+            elif a == 3:
+                x = -1
+                y = -1
+                while x == -1:
+                    try:
+                        x = int(input("Please enter the first multiplication number:"))
+                    except:
+                        print("Please enter a number")
+                        x = -1
+                while y == -1:
+                    try:
+                        y = int(input("Please enter the second multiplication number:"))
+                    except:
+                        print("Please enter a number")
+                        y = -1
+                print(str(x) + " " + "*" + " " + str(y) + " " + "=" + " " +str(x * y))
+
+#DIVISION                
+            elif a == 4:
+                x = -1
+                y = -1
+                while x == -1:
+                    try:
+                        x = int(input("Please enter the first division number:"))
+                    except:
+                        print("Please enter a number")
+                        x = -1
+                while y == -1:
+                    try:
+                        y = int(input("Please enter the second division number:"))
+                    except:
+                        print("Please enter a number")
+                        y = -1
+                print(str(x) + " " + "/" + " " + str(y) + " " + "=" + " " +str(x / y))
+
+
+#MODULO
+            elif a == 5:
+                x = -1
+                y = -1
+                while x == -1:
+                    try:
+                        x = int(input("Please enter the first modulo number:"))
+                    except:
+                        print("Please enter a number")
+                        x = -1
+                while y == -1:
+                    try:
+                        y = int(input("Please enter the second modulo number:"))
+                    except:
+                        print("Please enter a number")
+                        y = -1
+                print(str(x) + " " + "%" + " " + str(y) + " " + "=" + " " +str(x % y))
+        except:
+            print("Please enter a number between 1 and 5")
+            a = -1
+        finally:
+            q = str(input("press q if you want to quit my program or press enter key to continue"))
+            if q == "q" or q == "Q":
+                continuer = 1
+
+
+            
+#Don't forget to follow and like the code
+                                                                                                                            #Guillaume ZOSSOU
